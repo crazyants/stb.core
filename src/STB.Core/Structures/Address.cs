@@ -5,14 +5,13 @@
  * Website : http://www.soft2b.com/
  *---------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------*/
+using System;
 
 namespace STB.Core.Structures
 {
-    public class Author
+    public class Address
     {
-        public Unit Unit { get; set; }
-        public string Address { get; set; }
-        public string DefinitionHash { get; set; }
-        public int MainChainIndex { get; set; }
+        public string Hash { get; set; }
+        public DateTime CreationDate { get; set; }
     }
 }
