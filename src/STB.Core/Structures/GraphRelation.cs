@@ -5,11 +5,12 @@
  * Website : http://www.soft2b.com/
  *---------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------*/
+
 namespace STB.Core.Structures
 {
     public class GraphRelation
     {
-        public Unit Parent{ get; set; }
+        public Unit Parent { get; set; }
 
         public Unit Child { get; set; }
     }

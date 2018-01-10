@@ -10,10 +10,10 @@ using System;
 
 namespace STB.Core.Structures.HubClientTables
 {
-	public class WatchedLightUnits
-	{
-		public string Peer {get;set;}
-		public string Unit {get;set;}
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-	}
+    public class WatchedLightUnits
+    {
+        public string Peer { get; set; }
+        public string Unit { get; set; }
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+    }
 }

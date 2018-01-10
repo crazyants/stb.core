@@ -8,8 +8,8 @@
 
 namespace STB.Core.Structures.WalletTables
 {
-	public class MyWitnesses
-	{
-		public string Address {get;set;}
-	}
+    public class MyWitnesses
+    {
+        public string Address { get; set; }
+    }
 }

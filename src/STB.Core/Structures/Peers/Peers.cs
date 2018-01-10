@@ -10,21 +10,24 @@ using System;
 
 namespace STB.Core.Structures.Peers
 {
-	public class Peers
-	{
-		/// <summary>
-		///  wss:// address
-		/// </summary>
-		public string Peer {get;set;}
-		/// <summary>
-		///  domain or IP
-		/// </summary>
-		public string PeerHost {get;set;}
-		/// <summary>
-		///  domain or IP
-		/// </summary>
-		public string LearntFromPeerHost {get;set;}
-		public byte? IsSelf {get;set;} = 0;
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-	}
+    public class Peers
+    {
+        /// <summary>
+        ///     wss:// address
+        /// </summary>
+        public string Peer { get; set; }
+
+        /// <summary>
+        ///     domain or IP
+        /// </summary>
+        public string PeerHost { get; set; }
+
+        /// <summary>
+        ///     domain or IP
+        /// </summary>
+        public string LearntFromPeerHost { get; set; }
+
+        public byte? IsSelf { get; set; } = 0;
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+    }
 }

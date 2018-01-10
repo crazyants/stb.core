@@ -10,16 +10,17 @@ using System;
 
 namespace STB.Core.Structures.Peers
 {
-	/// <summary>
-	///  INSERT INTO peers (peer_host, peer) VALUES('127.0.0.1', 'ws://127.0.0.1:8081');
-	/// </summary>
-	public class PeerEvents
-	{
-		/// <summary>
-		///  domain or IP
-		/// </summary>
-		public string PeerHost {get;set;}
-		public DateTime? EventDate {get;set;} = DateTime.Now;
-		public string Event {get;set;}
-	}
+    /// <summary>
+    ///     INSERT INTO peers (peer_host, peer) VALUES('127.0.0.1', 'ws://127.0.0.1:8081');
+    /// </summary>
+    public class PeerEvents
+    {
+        /// <summary>
+        ///     domain or IP
+        /// </summary>
+        public string PeerHost { get; set; }
+
+        public DateTime? EventDate { get; set; } = DateTime.Now;
+        public string Event { get; set; }
+    }
 }

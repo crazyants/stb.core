@@ -10,11 +10,11 @@ using System;
 
 namespace STB.Core.Structures.HubClientTables
 {
-	public class PairingSecrets
-	{
-		public string PairingSecret {get;set;}
-		public byte? IsPermanent {get;set;} = 0;
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-		public DateTime? ExpiryDate {get;set;}
-	}
+    public class PairingSecrets
+    {
+        public string PairingSecret { get; set; }
+        public byte? IsPermanent { get; set; } = 0;
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+        public DateTime? ExpiryDate { get; set; }
+    }
 }

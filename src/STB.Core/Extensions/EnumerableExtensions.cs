@@ -5,6 +5,7 @@
  * Website : http://www.soft2b.com/
  *---------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------*/
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -52,10 +53,11 @@ namespace STB.Core
             {
                 list.Add(enumberable.Current);
             } while (enumberable.MoveNext());
+
             return list;
         }
 
-        
+
         public static Func<T, TKey> MehodLambda<T, TKey>(string propertyName)
         {
             var p = Expression.Parameter(typeof(T), "p");
@@ -63,7 +65,7 @@ namespace STB.Core
             var lambda = Expression.Lambda<Func<T, TKey>>(body, p);
             return lambda.Compile();
         }
- 
+
         /// <summary>
         ///     Source元素 与 any 是否有交集
         ///     即 Source元素是否包含any元素

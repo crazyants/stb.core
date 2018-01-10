@@ -13,8 +13,6 @@ namespace STB.Core
 {
     public static class SHA1Extension
     {
- 
-
         public static string ToSHA1(this string dataStr)
         {
             if (dataStr == null)

@@ -8,14 +8,16 @@
 
 namespace STB.Core.Structures.SpecificMessageTypes
 {
-	public class AssetAttestors
-	{
-		public string Unit {get;set;}
-		public byte? MessageIndex {get;set;}
-		/// <summary>
-		///  in the initial attestor list: same as unit
-		/// </summary>
-		public string Asset {get;set;}
-		public string AttestorAddress {get;set;}
-	}
+    public class AssetAttestors
+    {
+        public string Unit { get; set; }
+        public byte? MessageIndex { get; set; }
+
+        /// <summary>
+        ///     in the initial attestor list: same as unit
+        /// </summary>
+        public string Asset { get; set; }
+
+        public string AttestorAddress { get; set; }
+    }
 }

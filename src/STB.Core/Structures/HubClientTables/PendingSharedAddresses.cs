@@ -10,10 +10,10 @@ using System;
 
 namespace STB.Core.Structures.HubClientTables
 {
-	public class PendingSharedAddresses
-	{
-		public string DefinitionTemplateChash {get;set;}
-		public string DefinitionTemplate {get;set;}
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-	}
+    public class PendingSharedAddresses
+    {
+        public string DefinitionTemplateChash { get; set; }
+        public string DefinitionTemplate { get; set; }
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+    }
 }

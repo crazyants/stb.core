@@ -5,6 +5,7 @@
  * Website : http://www.soft2b.com/
  *---------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------*/
+
 namespace STB.Core.Structures
 {
     public class Messages
@@ -19,6 +20,5 @@ namespace STB.Core.Structures
         public string Payload { get; set; }
         public string PayloadUriHash { get; set; }
         public string PayloadUri { get; set; }
-        
     }
 }

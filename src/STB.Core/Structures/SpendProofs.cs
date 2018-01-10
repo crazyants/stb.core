@@ -5,6 +5,7 @@
  * Website : http://www.soft2b.com/
  *---------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------*/
+
 namespace STB.Core.Structures
 {
     public class SpendProofs
@@ -14,6 +15,5 @@ namespace STB.Core.Structures
         public byte SpendProofIndex { get; set; }
         public string SpendProof { get; set; }
         public string Address { get; set; }
-
     }
 }

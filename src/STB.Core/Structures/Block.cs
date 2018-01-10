@@ -5,6 +5,7 @@
  * Website : http://www.soft2b.com/
  *---------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------*/
+
 using System;
 
 namespace STB.Core.Structures
@@ -15,6 +16,5 @@ namespace STB.Core.Structures
         public DateTime CreationDate { get; set; }
         public Unit Unit { get; set; }
         public int CountPaidWitnesses { get; set; }
-
     }
 }

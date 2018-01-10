@@ -33,7 +33,5 @@ namespace STB.Core.Structures
         public Unit BestParentUnit { get; set; }
         public string Sequence { get; set; }
         public bool IsStable { get; set; }
-
-
     }
 }

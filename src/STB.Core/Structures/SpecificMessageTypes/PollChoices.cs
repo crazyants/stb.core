@@ -8,10 +8,10 @@
 
 namespace STB.Core.Structures.SpecificMessageTypes
 {
-	public class PollChoices
-	{
-		public string Unit {get;set;}
-		public byte? ChoiceIndex {get;set;}
-		public string Choice {get;set;}
-	}
+    public class PollChoices
+    {
+        public string Unit { get; set; }
+        public byte? ChoiceIndex { get; set; }
+        public string Choice { get; set; }
+    }
 }

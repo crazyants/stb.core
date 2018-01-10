@@ -10,13 +10,13 @@ using System;
 
 namespace STB.Core.Structures.HubClientTables
 {
-	public class ChatMessages
-	{
-		public int? Id {get;set;}
-		public string CorrespondentAddress {get;set;}
-		public string Message {get;set;}
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-		public int? IsIncoming {get;set;}
-		public string Type {get;set;} = "text";
-	}
+    public class ChatMessages
+    {
+        public int? Id { get; set; }
+        public string CorrespondentAddress { get; set; }
+        public string Message { get; set; }
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+        public int? IsIncoming { get; set; }
+        public string Type { get; set; } = "text";
+    }
 }

@@ -10,13 +10,13 @@ using System;
 
 namespace STB.Core.Structures.HubClientTables
 {
-	/// <summary>
-	///  member addresses live on different devices, member addresses themselves may be composed of several keys
-	/// </summary>
-	public class SharedAddresses
-	{
-		public string SharedAddress {get;set;}
-		public string Definition {get;set;}
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-	}
+    /// <summary>
+    ///     member addresses live on different devices, member addresses themselves may be composed of several keys
+    /// </summary>
+    public class SharedAddresses
+    {
+        public string SharedAddress { get; set; }
+        public string Definition { get; set; }
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+    }
 }

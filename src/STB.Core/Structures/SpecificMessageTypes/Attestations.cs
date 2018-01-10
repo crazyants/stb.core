@@ -8,11 +8,11 @@
 
 namespace STB.Core.Structures.SpecificMessageTypes
 {
-	public class Attestations
-	{
-		public string Unit {get;set;}
-		public byte? MessageIndex {get;set;}
-		public string AttestorAddress {get;set;}
-		public string Address {get;set;}
-	}
+    public class Attestations
+    {
+        public string Unit { get; set; }
+        public byte? MessageIndex { get; set; }
+        public string AttestorAddress { get; set; }
+        public string Address { get; set; }
+    }
 }

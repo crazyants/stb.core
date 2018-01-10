@@ -10,13 +10,13 @@ using System;
 
 namespace STB.Core.Structures.HubClientTables
 {
-	/// <summary>
-	///  light clients
-	/// </summary>
-	public class WatchedLightAddresses
-	{
-		public string Peer {get;set;}
-		public string Address {get;set;}
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-	}
+    /// <summary>
+    ///     light clients
+    /// </summary>
+    public class WatchedLightAddresses
+    {
+        public string Peer { get; set; }
+        public string Address { get; set; }
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+    }
 }

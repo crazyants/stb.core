@@ -10,11 +10,11 @@ using System;
 
 namespace STB.Core.Structures.Networking
 {
-	public class ArchivedJoints
-	{
-		public string Unit {get;set;}
-		public string Reason {get;set;}
-		public string Json {get;set;}
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-	}
+    public class ArchivedJoints
+    {
+        public string Unit { get; set; }
+        public string Reason { get; set; }
+        public string Json { get; set; }
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+    }
 }

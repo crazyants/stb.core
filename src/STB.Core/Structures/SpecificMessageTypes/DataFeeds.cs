@@ -8,12 +8,12 @@
 
 namespace STB.Core.Structures.SpecificMessageTypes
 {
-	public class DataFeeds
-	{
-		public string Unit {get;set;}
-		public byte? MessageIndex {get;set;}
-		public string FeedName {get;set;}
-		public string Value {get;set;}
-		public long IntValue {get;set;}
-	}
+    public class DataFeeds
+    {
+        public string Unit { get; set; }
+        public byte? MessageIndex { get; set; }
+        public string FeedName { get; set; }
+        public string Value { get; set; }
+        public long IntValue { get; set; }
+    }
 }

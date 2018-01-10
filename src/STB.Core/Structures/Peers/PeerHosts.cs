@@ -10,18 +10,19 @@ using System;
 
 namespace STB.Core.Structures.Peers
 {
-	/// <summary>
-	///  Peers
-	/// </summary>
-	public class PeerHosts
-	{
-		/// <summary>
-		///  domain or IP
-		/// </summary>
-		public string PeerHost {get;set;}
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-		public int? CountNewGoodJoints {get;set;} = 0;
-		public int? CountInvalidJoints {get;set;} = 0;
-		public int? CountNonserialJoints {get;set;} = 0;
-	}
+    /// <summary>
+    ///     Peers
+    /// </summary>
+    public class PeerHosts
+    {
+        /// <summary>
+        ///     domain or IP
+        /// </summary>
+        public string PeerHost { get; set; }
+
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+        public int? CountNewGoodJoints { get; set; } = 0;
+        public int? CountInvalidJoints { get; set; } = 0;
+        public int? CountNonserialJoints { get; set; } = 0;
+    }
 }

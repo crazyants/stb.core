@@ -5,13 +5,14 @@
  * Website : http://www.soft2b.com/
  *---------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------*/
+
 namespace STB.Core.Structures
 {
     public class EarnedHeadersCommissionRecipients
     {
-        public Unit Unit{ get; set; }
-        public string Address
-        { get; set; }
+        public Unit Unit { get; set; }
+
+        public string Address { get; set; }
 
         public int EarnedHeadersCommissionShare { get; set; }
     }

@@ -10,15 +10,17 @@ using System;
 
 namespace STB.Core.Structures.Commissions
 {
-	public class HeadersCommissionOutputs
-	{
-		public int? MainChainIndex {get;set;}
-		/// <summary>
-		///  address of the commission receiver
-		/// </summary>
-		public string Address {get;set;}
-		public long? Amount {get;set;}
-		public byte? IsSpent {get;set;} = 0;
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-	}
+    public class HeadersCommissionOutputs
+    {
+        public int? MainChainIndex { get; set; }
+
+        /// <summary>
+        ///     address of the commission receiver
+        /// </summary>
+        public string Address { get; set; }
+
+        public long? Amount { get; set; }
+        public byte? IsSpent { get; set; } = 0;
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+    }
 }

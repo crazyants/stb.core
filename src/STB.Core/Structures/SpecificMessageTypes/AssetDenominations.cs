@@ -8,11 +8,11 @@
 
 namespace STB.Core.Structures.SpecificMessageTypes
 {
-	public class AssetDenominations
-	{
-		public string Asset {get;set;}
-		public int? Denomination {get;set;}
-		public long CountCoins {get;set;}
-		public long? MaxIssuedSerialNumber {get;set;} = 0;
-	}
+    public class AssetDenominations
+    {
+        public string Asset { get; set; }
+        public int? Denomination { get; set; }
+        public long CountCoins { get; set; }
+        public long? MaxIssuedSerialNumber { get; set; } = 0;
+    }
 }

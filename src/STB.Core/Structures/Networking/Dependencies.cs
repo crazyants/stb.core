@@ -10,13 +10,13 @@ using System;
 
 namespace STB.Core.Structures.Networking
 {
-	/// <summary>
-	///  Networking
-	/// </summary>
-	public class Dependencies
-	{
-		public string Unit {get;set;}
-		public string DependsOnUnit {get;set;}
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-	}
+    /// <summary>
+    ///     Networking
+    /// </summary>
+    public class Dependencies
+    {
+        public string Unit { get; set; }
+        public string DependsOnUnit { get; set; }
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+    }
 }

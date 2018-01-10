@@ -10,12 +10,12 @@ using System;
 
 namespace STB.Core.Structures.Commissions
 {
-	public class WitnessingOutputs
-	{
-		public int? MainChainIndex {get;set;}
-		public string Address {get;set;}
-		public long? Amount {get;set;}
-		public byte? IsSpent {get;set;} = 0;
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-	}
+    public class WitnessingOutputs
+    {
+        public int? MainChainIndex { get; set; }
+        public string Address { get; set; }
+        public long? Amount { get; set; }
+        public byte? IsSpent { get; set; } = 0;
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+    }
 }

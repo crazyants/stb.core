@@ -8,16 +8,17 @@
 
 namespace STB.Core.Structures.CatchingUp
 {
-	/// <summary>
-	///  Catching up
-	/// </summary>
-	public class HashTreeBalls
-	{
-		/// <summary>
-		///  in increasing level order
-		/// </summary>
-		public int? BallIndex {get;set;}
-		public string Ball {get;set;}
-		public string Unit {get;set;}
-	}
+    /// <summary>
+    ///     Catching up
+    /// </summary>
+    public class HashTreeBalls
+    {
+        /// <summary>
+        ///     in increasing level order
+        /// </summary>
+        public int? BallIndex { get; set; }
+
+        public string Ball { get; set; }
+        public string Unit { get; set; }
+    }
 }

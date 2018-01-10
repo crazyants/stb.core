@@ -5,6 +5,7 @@
  * Website : http://www.soft2b.com/
  *---------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------*/
+
 namespace STB.Core.Structures
 {
     public class Authentifiers
@@ -13,6 +14,5 @@ namespace STB.Core.Structures
         public string Address { get; set; }
         public string Path { get; set; }
         public string Authentifier { get; set; }
-       
     }
 }

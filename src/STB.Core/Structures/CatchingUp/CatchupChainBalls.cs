@@ -8,12 +8,13 @@
 
 namespace STB.Core.Structures.CatchingUp
 {
-	public class CatchupChainBalls
-	{
-		/// <summary>
-		///  in increasing level order
-		/// </summary>
-		public int? MemberIndex {get;set;}
-		public string Ball {get;set;}
-	}
+    public class CatchupChainBalls
+    {
+        /// <summary>
+        ///     in increasing level order
+        /// </summary>
+        public int? MemberIndex { get; set; }
+
+        public string Ball { get; set; }
+    }
 }

@@ -10,14 +10,14 @@ using System;
 
 namespace STB.Core.Structures.HubTables
 {
-	/// <summary>
-	///  hub tables
-	/// </summary>
-	public class Devices
-	{
-		public string DeviceAddress {get;set;}
-		public string Pubkey {get;set;}
-		public string TempPubkeyPackage {get;set;}
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-	}
+    /// <summary>
+    ///     hub tables
+    /// </summary>
+    public class Devices
+    {
+        public string DeviceAddress { get; set; }
+        public string Pubkey { get; set; }
+        public string TempPubkeyPackage { get; set; }
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+    }
 }

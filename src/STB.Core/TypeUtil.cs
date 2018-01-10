@@ -5,6 +5,7 @@
  * Website : http://www.soft2b.com/
  *---------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------*/
+
 using System;
 using System.ComponentModel;
 using System.Reflection;
@@ -17,7 +18,7 @@ namespace STB.Core
     public class TypeUtil
     {
         /// <summary>
-        /// Get the NestType in a Nullable
+        ///     Get the NestType in a Nullable
         /// </summary>
         /// <param name="conversionType"></param>
         /// <returns></returns>
@@ -31,6 +32,7 @@ namespace STB.Core
                 var nullableConverter = new NullableConverter(conversionType);
                 conversionType = nullableConverter.UnderlyingType;
             }
+
             return conversionType;
         }
     }

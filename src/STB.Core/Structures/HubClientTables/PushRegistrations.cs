@@ -8,9 +8,9 @@
 
 namespace STB.Core.Structures.HubClientTables
 {
-	public class PushRegistrations
-	{
-		public string RegistrationId {get;set;}
-		public string DeviceAddress {get;set;}
-	}
+    public class PushRegistrations
+    {
+        public string RegistrationId { get; set; }
+        public string DeviceAddress { get; set; }
+    }
 }

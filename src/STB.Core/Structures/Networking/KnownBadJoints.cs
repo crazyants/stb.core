@@ -10,12 +10,12 @@ using System;
 
 namespace STB.Core.Structures.Networking
 {
-	public class KnownBadJoints
-	{
-		public string Joint {get;set;}
-		public string Unit {get;set;}
-		public string Json {get;set;}
-		public string Error {get;set;}
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-	}
+    public class KnownBadJoints
+    {
+        public string Joint { get; set; }
+        public string Unit { get; set; }
+        public string Json { get; set; }
+        public string Error { get; set; }
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+    }
 }

@@ -8,16 +8,18 @@
 
 namespace STB.Core.Structures.Commissions
 {
-	public class PaidWitnessEvents
-	{
-		public string Unit {get;set;}
-		/// <summary>
-		///  witness address
-		/// </summary>
-		public string Address {get;set;}
-		/// <summary>
-		///  NULL if expired
-		/// </summary>
-		public byte Delay {get;set;}
-	}
+    public class PaidWitnessEvents
+    {
+        public string Unit { get; set; }
+
+        /// <summary>
+        ///     witness address
+        /// </summary>
+        public string Address { get; set; }
+
+        /// <summary>
+        ///     NULL if expired
+        /// </summary>
+        public byte Delay { get; set; }
+    }
 }

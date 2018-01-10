@@ -10,11 +10,11 @@ using System;
 
 namespace STB.Core.Structures.Networking
 {
-	public class UnhandledJoints
-	{
-		public string Unit {get;set;}
-		public string Peer {get;set;}
-		public string Json {get;set;}
-		public DateTime? CreationDate {get;set;} = DateTime.Now;
-	}
+    public class UnhandledJoints
+    {
+        public string Unit { get; set; }
+        public string Peer { get; set; }
+        public string Json { get; set; }
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
+    }
 }

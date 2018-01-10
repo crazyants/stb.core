@@ -5,14 +5,14 @@
  * Website : http://www.soft2b.com/
  *---------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------*/
+
 using System;
 
 namespace STB.Core.Structures
 {
     public class WitnessListHashes
     {
-        public Unit WitnessListUnit
-        { get; set; }
+        public Unit WitnessListUnit { get; set; }
 
         public string WitnessListHash { get; set; }
         public DateTime CreationDate { get; set; }
