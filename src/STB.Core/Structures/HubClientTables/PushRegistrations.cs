@@ -8,7 +8,7 @@
 
 namespace STB.Core.Structures.HubClientTables
 {
-	public class IFNOTEXISTSPushRegistrations
+	public class PushRegistrations
 	{
 		public string RegistrationId {get;set;}
 		public string DeviceAddress {get;set;}
