@@ -1,5 +1,6 @@
 # stb.core
 A NEW ECOSYSTEM OF SOFTWARE SERVICES DRIVEN BY BLOCKCHAIN
+
 A Software Copyright Protection and Trading Platform Based on Blockchain Technology
 
 
