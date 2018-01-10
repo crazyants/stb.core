@@ -1,6 +1,6 @@
 # stb.core
 [![Build status](https://ci.appveyor.com/api/projects/status/y0vdhbsak4uovnqm?svg=true)](https://ci.appveyor.com/project/chsword/stb-core)
-
+[![CodeFactor](https://www.codefactor.io/repository/github/stbchain/stb.core/badge)](https://www.codefactor.io/repository/github/stbchain/stb.core)
 
 A NEW ECOSYSTEM OF SOFTWARE SERVICES DRIVEN BY BLOCKCHAIN
 
