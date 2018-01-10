@@ -24,9 +24,16 @@ namespace STB.Core.Structures
         public string Version { get; set; } = "1.0";
         public DateTime CreationDate { get; set; }
         public Unit WitnessListUnit { get; set; }
-        public Unit LastBlockUnit
-        { get; set; }
-        public string ContentHash { get; set; } 
+        public Unit LastBlockUnit { get; set; }
+        public string ContentHash { get; set; }
+        public string Alt { get; set; }
+        public int HeadersCommission { get; set; }
+        public int PayloadCommission { get; set; }
+
+        public Unit BestParentUnit { get; set; }
+        public string Sequence { get; set; }
+        public bool IsStable { get; set; }
+
 
     }
 }
