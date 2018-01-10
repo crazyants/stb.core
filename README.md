@@ -1,4 +1,7 @@
 # stb.core
+[![Build status](https://ci.appveyor.com/api/projects/status/y0vdhbsak4uovnqm?svg=true)](https://ci.appveyor.com/project/chsword/stb-core)
+
+
 A NEW ECOSYSTEM OF SOFTWARE SERVICES DRIVEN BY BLOCKCHAIN
 
 A Software Copyright Protection and Trading Platform Based on Blockchain Technology
