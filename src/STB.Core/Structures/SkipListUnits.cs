@@ -7,10 +7,9 @@
  ---------------------------------------------------------------------------------------------*/
 namespace STB.Core.Structures
 {
-    public class GraphRelation
+    public class SkipListUnits
     {
-        public Unit Parent{ get; set; }
-
-        public Unit Child { get; set; }
+        public Unit Unit { get; set; }
+        public Unit SkipListUnit { get; set; }
     }
 }

@@ -5,12 +5,16 @@
  * Website : http://www.soft2b.com/
  *---------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------*/
+using System;
+
 namespace STB.Core.Structures
 {
-    public class GraphRelation
+    public class WitnessListHashs
     {
-        public Unit Parent{ get; set; }
+        public Unit WitnessListUnit
+        { get; set; }
 
-        public Unit Child { get; set; }
+        public string WitnessListHash { get; set; }
+        public DateTime CreationDate { get; set; }
     }
 }

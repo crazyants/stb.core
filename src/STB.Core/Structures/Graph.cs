@@ -24,6 +24,8 @@ namespace STB.Core.Structures
         public string Version { get; set; } = "1.0";
         public DateTime CreationDate { get; set; }
         public Unit WitnessListUnit { get; set; }
+        public Unit LastBlockUnit
+        { get; set; }
         public string ContentHash { get; set; } 
 
     }
