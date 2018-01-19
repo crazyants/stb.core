@@ -68,7 +68,7 @@ namespace STB.Core
             {
                 arrFrags.Add(bin.Substring(start, arrOffsets[i]));
                 
-                arrChecksumBits.Add(bin.Substring(arrOffsets[i], 1));//Substr
+                arrChecksumBits.Add(bin.Substring(arrOffsets[i], 1));//todo Substr
                 start = arrOffsets[i] + 1;
             }
             // add last frag
@@ -77,6 +77,36 @@ namespace STB.Core
             var binCleanData = string.Join("",arrFrags);
             var binChecksum = string.Join("", arrChecksumBits);
             return new { clean_data= binCleanData, checksum= binChecksum};
+        }
+
+        string mixChecksumIntoCleanData(string binCleanData, string binChecksum)
+        {
+            if (binChecksum.Length != 32)
+                throw new System.Exception("bad checksum length");
+            var len = binCleanData.Length + binChecksum.Length;
+            List<int> arrOffsets;
+            if (len == 160)
+                arrOffsets = arrOffsets160;
+            else if (len == 288)
+                arrOffsets = arrOffsets288;
+            else
+                throw new System.Exception("bad length=" + len + ", clean data = " + binCleanData + ", checksum = " +
+                                           binChecksum);
+            var arrFrags = new List<string>();
+            var arrChecksumBits = binChecksum.ToCharArray();
+            var start = 0;
+            for (var i = 0; i < arrOffsets.Count; i++)
+            {
+                var end = arrOffsets[i] - i;
+                arrFrags.Add(binCleanData.Substring(start, end));
+                arrFrags.Add(arrChecksumBits[i].ToString());
+                start = end;
+            }
+
+            // add last frag
+            if (start < binCleanData.Length)
+                arrFrags.Add(binCleanData.Substring(start));
+            return string.Join("", arrFrags);
         }
     }
 }
