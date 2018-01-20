@@ -12,6 +12,17 @@ namespace STB.Core
 {
     public static class BytesExtension
     {
+        public static byte[] Slice(this byte[] x, int num)
+        {
+            var bytes = new byte[x.Length - num];
+            for (int i = 0; i < x.Length - num; i++)
+            {
+                bytes[i] = x[num + i];
+            }
+
+            return bytes;
+        }
+
         public static long ToLong(this byte[] x, int offset)
         {
             long result = 0;
