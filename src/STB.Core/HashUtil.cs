@@ -208,17 +208,19 @@ namespace STB.Core
 
         private byte[] createHash(string hashAlgorithm, byte[] data)
         {
-            if (hashAlgorithm == "sha256")
-                using (var sha1 = SHA256.Create())
-                {
-                    return sha1.ComputeHash(data);
-                }
-
-            if (hashAlgorithm == "ripemd160")
-                using (var ripemd160 = RIPEMD160.Create())
-                {
-                    return ripemd160.ComputeHash(data);
-                }
+            switch (hashAlgorithm)
+            {
+                case "sha256":
+                    using (var sha1 = SHA256.Create())
+                    {
+                        return sha1.ComputeHash(data);
+                    }
+                case "ripemd160":
+                    using (var ripemd160 = RIPEMD160.Create())
+                    {
+                        return ripemd160.ComputeHash(data);
+                    }
+            }
 
             return null;
         }
