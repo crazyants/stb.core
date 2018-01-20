@@ -108,5 +108,17 @@ namespace STB.Core
                 arrFrags.Add(binCleanData.Substring(start));
             return string.Join("", arrFrags);
         }
+        string buffer2bin(byte[] buf)
+        {
+            var bytes = new List<string>();
+            for (var i = 0; i < buf.Length; i++)
+            {
+                var bin = buf[i].ToString();
+                if (bin.Length < 8) // pad with zeros
+                    bin = zeroString.Substring(bin.Length, 8) + bin;
+                bytes.Add(bin);
+            }
+            return string.Join("",bytes);//.join("");
+        }
     }
 }
