@@ -119,7 +119,7 @@ namespace STB.Core
             var bytes = new List<string>();
             foreach (var number in buf)
             {
-                var bin = IntToBin(number);
+                var bin = BinaryUtil.IntToBin(number);
                 bytes.Add(bin.PadLeft(8, '0'));
             }
 
@@ -131,7 +131,7 @@ namespace STB.Core
             var len = bin.Length / 8;
             var buf = new byte[len];
             for (var i = 0; i < len; i++)
-                buf[i] = (byte) BinToInt(bin.Substring(i * 8, 8));
+                buf[i] = (byte) BinaryUtil.BinToInt(bin.Substring(i * 8, 8));
             return buf;
         }
 
@@ -225,40 +225,5 @@ namespace STB.Core
 
             return null;
         }
-
-        private const string binConst = "01";
-
-        public static string IntToBin(int number)
-        {
-
-            Stack<char> stack = new Stack<char>();
-            while (number != 0)
-            {
-                stack.Push(binConst[number % 2]);
-                number >>= 1;
-            }
-
-            return string.Join("", stack);
-        }
-
-        public static int BinToInt(string bin)
-        {
-            int result = 0;
-            int f = 1;
-            for (int i = bin.Length - 1; i >= 0; i--)
-            {
-                char x = bin[i];
-                var num = x - '0';
-                if (num != 0 && num != 1) throw new Exception($"{nameof(bin)} is not a bin number:{bin},current:{x}");
-
-                result += num * f;
-                f *= 2;
-            }
-
-            return result;
-        }
-
-
-
     }
 }
