@@ -194,13 +194,10 @@ namespace STB.Core
                 var binChash = buffer2bin(chash);
                 var separated = SeparateIntoCleanDataAndChecksum(binChash);
                 var cleanData = bin2buffer(separated.Item1);
-                //console.log("clean data", clean_data);
                 var checksum = bin2buffer(separated.Item2);
-                //console.log(checksum);
-                //console.log(getChecksum(clean_data));
                 return checksum.Equals(getChecksum(cleanData));
             }
-            catch (Exception e)
+            catch
             {
                 return false;
             }
