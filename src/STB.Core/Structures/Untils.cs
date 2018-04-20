@@ -4,6 +4,9 @@ using System.Text;
 
 namespace STB.Core.Structures
 {
+    /// <summary>
+    /// For auxiliary classes
+    /// </summary>
     public class Untils
     {
         public string BlockData { get; set; }
