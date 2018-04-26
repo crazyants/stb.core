@@ -106,4 +106,13 @@ namespace STB.Core.Structures
             return output;
         }
     }
+
+    public class Until16
+    {
+        private const byte BitsInBlock = 5;
+        private const byte BitsInByte = 8;
+        private const string Alphabet = "IJKLMNOPQRSTUVWXYZ234567";
+        private const char Padding = '=';
+
+    }
 }
