@@ -115,4 +115,13 @@ namespace STB.Core.Structures
         private const char Padding = '=';
 
     }
+
+    public class Until128
+    {
+        private const byte BitsInBlock = 5;
+        private const byte BitsInByte = 8;
+        private const string Alphabet = "IJKLMNSDFSFSFFSOPQRSTUVWXYZ234567";
+        private const char Padding = '=';
+
+    }
 }
