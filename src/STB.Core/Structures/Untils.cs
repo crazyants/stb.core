@@ -122,6 +122,7 @@ namespace STB.Core.Structures
         private const byte BitsInByte = 8;
         private const string Alphabet = "IJKLMNSDFSFSFFSOPQRSTUVWXYZ234567";
         private const char Padding = '=';
-
+        private const byte BitsAlphabet = 5;
+        private const byte BitsPadding = 8;
     }
 }
