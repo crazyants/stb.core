@@ -95,6 +95,47 @@ namespace STB.Core.Structures
 
             return output;
         }
+
+        public static byte[] MyDecode(string input)
+        {
+            Contract.Requires<ArgumentNullException>(input != null);
+            Contract.Requires<ArgumentException>(Contract.ForAll(input.ToCharArray(), x => Alphabet.IndexOf(x) >= 0 || x == Padding));
+            Contract.Ensures(Contract.Result<byte[]>() != null);
+
+            if (string.IsNullOrEmpty(input))
+            {
+                return new byte[0];
+            }
+
+            input = input.TrimEnd(Padding).ToUpperInvariant();
+
+            var output = new byte[input.Length * BitsInBlock / BitsInByte];
+            var position = 0;
+            byte workingByte = 0, bitsRemaining = BitsInByte;
+
+            foreach (var currentChar in input.ToCharArray())
+            {
+                int mask;
+                var currentCharPosition = Alphabet.IndexOf(currentChar);
+
+                if (bitsRemaining > BitsInBlock)
+                {
+                    mask = currentCharPosition << (bitsRemaining - BitsInBlock);
+                    workingByte = (byte)(workingByte | mask);
+                    bitsRemaining -= BitsInBlock;
+                }
+                else
+                {
+                    mask = currentCharPosition >> (BitsInBlock - bitsRemaining);
+                    workingByte = (byte)(workingByte | mask);
+                    output[position++] = workingByte;
+                    workingByte = unchecked((byte)(currentCharPosition << (BitsInByte - BitsInBlock + bitsRemaining)));
+                    bitsRemaining += BitsInByte - BitsInBlock;
+                }
+            }
+
+            return output;
+        }
     }
 
 
