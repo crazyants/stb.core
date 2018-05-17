@@ -136,6 +136,50 @@ namespace STB.Core.Structures
 
             return output;
         }
+
+        public static string MyEncode(byte[] input)
+        {
+            Contract.Requires<ArgumentException>(input != null);
+            Contract.Ensures(Contract.Result<string>() != null);
+
+            if (input.Length == 0)
+            {
+                return string.Empty;
+            }
+
+            var output = new char[(int)decimal.Ceiling((input.Length / (decimal)BitsInBlock)) * BitsInByte];
+            var position = 0;
+            byte workingByte = 0, remainingBits = BitsInBlock;
+
+            foreach (var currentByte in input)
+            {
+                workingByte = (byte)(workingByte | (currentByte >> (BitsInByte - remainingBits)));
+                output[position++] = Alphabet[workingByte];
+
+                if (remainingBits < BitsInByte - BitsInBlock)
+                {
+                    workingByte = (byte)((currentByte >> (BitsInByte - BitsInBlock - remainingBits)) & 31);
+                    output[position++] = Alphabet[workingByte];
+                    remainingBits += BitsInBlock;
+                }
+
+                remainingBits -= BitsInByte - BitsInBlock;
+                workingByte = (byte)((currentByte << remainingBits) & 31);
+            }
+
+            if (position != output.Length)
+            {
+                output[position++] = Alphabet[workingByte];
+            }
+
+            while (position < output.Length)
+            {
+                output[position++] = Padding;
+            }
+
+            return new string(output);
+        }
+
     }
 
 
